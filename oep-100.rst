@@ -2,5 +2,25 @@
     105
 
 :Titolo:
-    The locations service
+    Il servizio locations
+    
+:Versione:
+    1
+    
+:Ultima modifica:
+    2014-10-21 13:39:00
+    
+:Autore:
+    Guglielmo Celata <guglielmo@openpolis.it>
+    
+:Status:
+    Draft
+    
+:Created:
+    21 Ottobre 2014
+    
+Abstract
+========
+Abbiamo bisogno di un componente che permetta di integrare l'elenco delle location 
+sulle applicazioni web o all'interno degli altri servizi che sviluppiamo
     
