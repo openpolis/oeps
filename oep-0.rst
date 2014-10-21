@@ -26,8 +26,12 @@ Introduzione
 ============
 Questa OEP contiene l'indice di tutte le OEP
 
-Indice per categoria
-====================
+Indice
+======
+
+::
 
     num     titolo                                                                         autori
     ---     ------                                                                         ------
+    105     Il servizio locations                                                          guglielmo
+    
