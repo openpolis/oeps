@@ -35,4 +35,4 @@ Indice
  SD   105_ Il servizio locations                                                          guglielmo
 ==== ===== ============================================================================== ================
     
-.. _105: http://github.com/openpolis/oeps/oep-105.rst
+.. _105: http://github.com/openpolis/oeps/blob/master/oep-105.rst
