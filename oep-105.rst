@@ -21,21 +21,23 @@
     
 Abstract
 =======
-Questa proposta descrive un servizio che fornisce le informazioni delle località geografiche e delle loro 
-categorizzazioni gerarchiche.
+La proposta definisce un modello in grado di contenere tutte le informazioni geografiche utili alle nostre applicazioni.
+Il modello è esposto pubblicamente attraverso un endpoint delle api di openpolis (REST/HTTP).
 
-Il servizio è offerto attraverso le API di openpolis, attraverso un protocollo REST/HTTP.
-
-La proposta descrive un wrapper, da usare per l'integrazione in progetti django.
+La proposta descrive inoltre un wrapper, da usare per l'integrazione in progetti django. 
 
 Razionale
 ========
-Abbiamo bisogno di un componente che permetta di integrare l'elenco e le categorizzazioni gerarchiche
+Abbiamo bisogno di un servizio che permetta di integrare l'elenco e le categorizzazioni gerarchiche
 delle location all'interno di tutte le applicazioni o servizi web che sviluppiamo.
 
 Attualmente, ogni volta, creiamo all'interno del progetto django un'applicazione dedicata, duplicando i dati.
 
-Questo metodo è dispendioso e, qualora ci siano dei cambiamenti strutturali (aggregazioni, scissioni di comuni, provincie, nuove aree metropolitane, ...) 
-le modifiche devono essere ripetute su tutte le applicazioni.
+Questo metodo è dispendioso e, qualora ci siano dei cambiamenti strutturali 
+(aggregazioni, scissioni di comuni, provincie, nuove aree metropolitane, ...) 
+le modifiche devono essere ripetute manualmente su tutte le applicazioni.
 
-    
+Si vuole sviluppare un meccanismo di verifica e controllo dei dati da una sorgente unica (le API),
+che permetta un aggiornamento automatico dei dati in locale, non distruttivo, rispetto a modifiche,
+anche strutturali, nel corso del tempo.
+
