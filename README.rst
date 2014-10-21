@@ -2,7 +2,7 @@ oeps
 ====
 
 Questo repository contiene l'elenco delle Openpolis Enhancement Proposals.
-Sono proposte di miglioramento dell'infrastruttura, dei processi e dei protocolli Openpolis.
+Sono proposte di miglioramento dell'infrastruttura, degli standard e dei protocolli Openpolis.
 
 Prendono spunto dalle `Python PEP`_.
 
@@ -20,7 +20,7 @@ Ciascun OEP ha:
 
 Codici::
 
-    S - OEP che riguarda gli standard
+    S - OEP che riguarda gli standard, i protocolli o l'infrastruttura
     I - OEP informativi
     P - OEP che riguardano le OEP (meta)
 
