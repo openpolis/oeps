@@ -1,0 +1,24 @@
+:OEP: 
+    105
+
+:Titolo:
+    Verifica congruità dati Openpolis
+    
+:Versione:
+    1
+    
+:Ultima modifica:
+    2014-10-24 15:50:00
+    
+:Autore:
+    Guglielmo Celata <guglielmo@openpolis.it>
+    
+:Status:
+    Draft
+    
+:Created:
+    24 Ottobre 2014
+    
+Abstract
+=======
+La proposta definisce una soluzione per verificare la congruità di alcuni dei dati dell'universo openpolis.
