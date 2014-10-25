@@ -22,3 +22,6 @@
 Abstract
 =======
 La proposta definisce una soluzione per verificare la congruità di alcuni dei dati dell'universo openpolis.
+
+Le verifiche devono generare delle issues, che vengono notificate ai soggetti interessati e raccolte in un repository,
+dove è possibile gestirle, modificandone lo stato. 
