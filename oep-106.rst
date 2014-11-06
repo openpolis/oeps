@@ -29,10 +29,10 @@ dove è possibile gestirle, modificandone lo stato.
 
 Elenco verifiche richieste
 ==========================
-Di seguito sono elencate le verifiche ai dati, con il tipo di filtri e il tracciato record
+Di seguito sono elencate le verifiche ai dati, con il tracciato record
 
 ==== ========================================== ====================================================================================================== ======================================================================================
- ID   Titolo                                    Descr                                                                                                  Campi CSV
+ ID   Titolo                                    Descr                                                                                                  Campi
 ==== ========================================== ====================================================================================================== ======================================================================================
   1   Senza sindaco o commissario               Località senza sindaci né commissari, ordinate per numero di abitanti decrescente                      Nome loc, ID loc, Num. Abitanti
 ---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
