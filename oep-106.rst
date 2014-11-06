@@ -20,8 +20,37 @@
     24 Ottobre 2014
     
 Abstract
-=======
+========
 La proposta definisce una soluzione per verificare la congruità di alcuni dei dati dell'universo openpolis.
 
 Le verifiche devono generare delle issues, che vengono notificate ai soggetti interessati e raccolte in un repository,
 dove è possibile gestirle, modificandone lo stato. 
+
+
+Elenco verifiche richieste
+==========================
+Di seguito sono elencate le verifiche ai dati, con il tipo di filtri e il tracciato record
+
+==== ========================================== ====================================================================================================== ======================================================================================
+ ID   Titolo                                    Descr                                                                                                  Campi CSV
+==== ========================================== ====================================================================================================== ======================================================================================
+  1   Senza sindaco o commissario               Località senza sindaci né commissari, ordinate per numero di abitanti decrescente                      Nome loc, ID loc, Num. Abitanti
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  2   Troppi/pochi membri                       Istituzioni in cui il num. di componenti di giunta/consiglio non rispetta quello richiesto dalla norma Tipo Istituzione, Nome loc, ID loc, Num. abitanti, Num. richiesto, Num. attuale
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  3   Senza presidente                          Consiglio (reg, prov, com) senza presidente.                                                           Nome loc, ID loc, Num. abitanti
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  4   Contatti o immagine mancante              Politici senza mail/twitter/facebook/url/immagine per determinati tipi di istituzione.                 Tipo Istituzione, Nome loc, ID loc, Num. abitanti, Nome Cognome Pol, ID Pol
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  5   Incarichi discontinui                     Istituzioni in cui un incarico (sindaco, gov, pres. consiglio, ...) non è continuo (GAP > 1 mese)      Tipo Istituzione, Nome loc, ID loc, Num. abitanti
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  6   Incarichi sovrapposti                     Istituzioni in cui un incarico (sindaco, gov, pres. consiglio, ...) si sovrappone nel tempo.           Tipo Istituzione, Nome loc, ID loc, Num. abitanti
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  7   Sindaci/Consiglieri                       I sindaci non possono anche essere consiglieri.                                                        Tipo Istituzione, Nome loc, ID loc, Num. abitanti
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  8   Troppi incarichi                          Politici che hanno più di un incarico (considerare eccezione consiglieri TN/BZ).                       Tipo Istituzione, Nome loc, ID loc, Num. abitanti, Nome Cognome Pol, ID Pol
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+  9   Durano troppo o poco                      Politici con incarichi che durano troppo o poco rispetto a quanto previsto                             Tipo Istituzione, Nome loc, ID loc, Num. abitanti, Nome Cognome Pol, ID Pol
+---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
+ 10   Incarichi doppioni                        Incarichi doppi e contemporanei (errore in import MinInt)                                              Tipo Istituzione, Nome loc, ID loc, Num. abitanti, Nome Cognome Pol, ID Pol
+==== ========================================== ====================================================================================================== ======================================================================================
