@@ -87,7 +87,7 @@ poter disntinguere i report tra di loro in fase di analisi.
 
 Segnalazione errori non riducibili
 ==================================
-Gli errori non risolvibili devono essere segnalati, aggiungendo una issue al repository ``openpolis/consistenzadati``.
+Gli errori non risolvibili devono essere segnalati, aggiungendo una issue al repository ``openpolis/consistenza-dati``.
 Nella issue, oltre alla descrizione del problema, deve essere segnalata la regola (id o titolo), con il valore dei parametri.
 E' possibile allegare un link a un report generato dalla trasformazione (GDrive, Dropbox, OPStorae).
 
