@@ -29,7 +29,10 @@ dove è possibile gestirle, modificandone lo stato.
 
 Elenco verifiche richieste
 ==========================
-Di seguito sono elencate le verifiche ai dati, con il tracciato record
+Di seguito sono elencate le verifiche ai dati, con il tracciato record.
+
+politici.openpolis.it
+---------------------
 
 ==== ========================================== ====================================================================================================== ======================================================================================
  ID   Titolo                                    Descr                                                                                                  Campi
@@ -54,3 +57,38 @@ Di seguito sono elencate le verifiche ai dati, con il tracciato record
 ---- ------------------------------------------ ------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
  10   Incarichi doppioni                        Incarichi doppi e contemporanei (errore in import MinInt)                                              Tipo Istituzione, Nome loc, ID loc, Num. abitanti, Nome Cognome Pol, ID Pol
 ==== ========================================== ====================================================================================================== ======================================================================================
+
+Infrastruttura
+==============
+
+Per le verifiche dei dati e le estrazioni dei report, si usa la suite ETL Pentaho_. 
+Le trasformazioni sono preparate sui desktop dei developer e condivise con gli operatori via repository *privato*,
+dato che contengono gli estremi delle connessioni al DB.
+
+Utilizzo
+========
+Ciascuna trasformazione produce un report con tutti quei record che costituiscono un'**inconsistenza** rispetto alla regola
+da verificare. Una procedura ha **successo**, idealmente, quando *il report è vuoto*.
+
+Ciascun report ha un nome descrittivo, contenente la data e l'ora di esecuzione.
+
+Gli operatori eseguono le verifiche sui loro desktop, fino a quando i report generati sono vuoti (successo).
+
+Quando non è possibile ottenere dei report vuoti, 
+le anomalie sono segnalate come issue nel repository ``openpolis/consistenza-dati``.
+
+Verifiche parametriche
+----------------------
+Alcune delle procedure di verifica possono essere parametriche. L'operatore deve
+selezionare il valore dei parametri prima di lanciare la procedura.
+
+Il nome del file di report generato, conterrà il valore del parametro o dei parametri, per
+poter disntinguere i report tra di loro in fase di analisi.
+
+Segnalazione errori non riducibili
+==================================
+Gli errori non risolvibili devono essere segnalati, aggiungendo una issue al repository ``openpolis/consistenzadati``.
+Nella issue, oltre alla descrizione del problema, deve essere segnalata la regola (id o titolo), con il valore dei parametri.
+E' possibile allegare un link a un report generato dalla trasformazione (GDrive, Dropbox, OPStorae).
+
+.. _Pentaho: http://www.pentaho.com/product/data-integration
