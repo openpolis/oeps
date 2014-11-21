@@ -23,8 +23,25 @@
     21 Novembre 2014
     
 Abstract
-=======
+========
 La proposta definisce una soluzione per il deploy di applicazioni django in staging (o produzione), 
 attraverso gli automatismi forniti da fabric_.
+
+Descrizione
+===========
+Uno shell script di provisioning trasforma una distribuzione di base (Ubuntu, CentOS, ...) in una buona per ospitare l'applicazione.
+Contiene i settaggi per configurare tutti i servizi cui l'applicazione si appoggia, 
+qualora sia necessario averli in esecuzione sullo stesso nodo (DB, Solr, Redis, Memcache, Mail, ...).
+
+Lo shell script è pubblicato su github.
+
+Eventuali update, per far passare il nodo in un nuovo stato, devono essere descritti in script di upgrade, 
+documentati su github.
+
+Le applicazioni python sono installate attraverso il lancio del comando ``pip install - requirements.txt``,
+all'interno del virtualenv.
+
+Il lancio dei comandi viene effettuato da remoto, attraverso fabric_, che deve essere configurato in modo 
+da preparare e usare il virtualenv sulla macchina di destinazione del deploy.
 
 .. _fabric: http://www.fabfile.org
