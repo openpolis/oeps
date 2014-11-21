@@ -35,8 +35,11 @@ Indice
  SD   105_ Il servizio locations                                                          guglielmo
 ---- ----- ------------------------------------------------------------------------------ ----------------
  SD   106_ Verifica congruità dei dati openpolis                                          guglielmo
+---- ----- ------------------------------------------------------------------------------ ----------------
+ SI   107_ Deploy applicazioni django                                                     guglielmo
 ==== ===== ============================================================================== ================
 
     
 .. _105: http://github.com/openpolis/oeps/blob/master/oep-105.rst
 .. _106: http://github.com/openpolis/oeps/blob/master/oep-106.rst
+.. _107: http://github.com/openpolis/oeps/blob/master/oep-107.rst
