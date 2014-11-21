@@ -27,7 +27,7 @@ Codici::
     A - Accepted proposal
     R - Rejected proposal
     W - Withdrawn proposal
-    D - Deferred proposal
+    P - Postponed proposal
     F - Final proposal
     A - Active proposal
     D - Draft proposal
