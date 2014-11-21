@@ -1,5 +1,5 @@
 :OEP: 
-    105
+    107
 
 :Titolo:
     Deploy di applicazioni django
@@ -15,6 +15,9 @@
     
 :Status:
     Draft
+
+:Type:
+    Protocollo
     
 :Created:
     21 Novembre 2014
