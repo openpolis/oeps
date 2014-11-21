@@ -24,4 +24,7 @@
     
 Abstract
 =======
-La proposta definisce una soluzione per il deploy di applicazioni django in staging (o produzione).
+La proposta definisce una soluzione per il deploy di applicazioni django in staging (o produzione), 
+attraverso gli automatismi forniti da fabric_.
+
+.. _fabric: http://www.fabfile.org
