@@ -1,0 +1,24 @@
+:OEP: 
+    105
+
+:Titolo:
+    Deploy di applicazioni django
+    
+:Versione:
+    1
+    
+:Ultima modifica:
+    2014-11-21 13:39:00
+    
+:Autore:
+    Guglielmo Celata <guglielmo@openpolis.it>
+    
+:Status:
+    Draft
+    
+:Created:
+    21 Novembre 2014
+    
+Abstract
+=======
+La proposta definisce una soluzione per il deploy di applicazioni django in staging (o produzione).
